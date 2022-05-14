@@ -3,12 +3,14 @@
   text-align: center;
   color:black;
   background-color: #f0f1f3;
+margin-top:-20px;
   
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+margin-left:-20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

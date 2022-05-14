@@ -1,11 +1,13 @@
 import React from "react";
-import faceid from './faceid.png';
+import logo from './logo.jpg'; 
 import './App.css';
 export default function App() {
     return (
         <div className="App">
-                <h1>Paper Repository</h1>
-        
+
+                <h1><img src={logo} className="App-logo" />Paper Repository
+ 
+</h1>
         </div>
     );
 }
