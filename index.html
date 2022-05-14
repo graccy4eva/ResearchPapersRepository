@@ -1,1 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Paper Repository</title><script defer="defer" src="/ResearchPapersRepository/static/js/main.a50aaa6a.js"></script><link href="/ResearchPapersRepository/static/css/main.a9bcd9ae.css" rel="stylesheet"></head><body><div id="root"></div><p>Welcome</p><script src="../dist/bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Paper Repository</title>
+
+    </head>
+    <body>
+        <div id="root"></div>
+
+<h1>Welcome! Explore a collection of papers in our repository </h1>
+<script type="text/javascript">
+    function processData(csv) {
+
+      let data = csv.split(/\r\n|\n/).map(v => v.split(','));
+
+      let headers = data.shift();
+
+      let table = document.createElement('table');
+
+      let thead = document.createElement('thead');
+      table.appendChild(thead);
+
+      thead.innerHTML = '<tr><th>' + headers.join('</th><th>') + '</th></tr>';
+
+      let tbody = document.createElement('tbody');
+      table.appendChild(tbody);
+
+      for (let row of data) {
+        tbody.innerHTML += '<tr><td>' + row.join('</td><td>') + '</td></tr>';
+      }
+
+      document.body.appendChild(table);
+
+    }
+
+    
+    fetch("https://raw.githubusercontent.com/graccy4eva/ResearchPapersRepository/main/public/paper-collection.csv")
+      .then(res => res.text())
+      .then(text => processData(text));
+  </script>
+
+<hr />
+        <!-- The bundle-name should be same as you defined in webpack config file -->
+        <script src="../dist/bundle.js"></script>
+    </body>
+</html>
