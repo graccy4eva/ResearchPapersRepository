@@ -29,12 +29,17 @@
 
 </div>
 <h1>Welcome! Explore a collection of papers in our repository </h1>
-<label for="filter">Filter by Year:</label>
-<select name="filter" id="filter" form="repo">
+<label for="filteryear">Filter by Year:</label>
+<select name="filteryear" id="filter" form="repo">
   <option value="2020 Papers">2020</option>
   <option value="2019 Papers">2019</option>
   <option value="2018 Papers">2018</option>
   <option value="2017 Papers">2017</option>
+</select>
+<label for="filterauthor">Filter by Author:</label>
+<select name="filter" id="filter" form="repo">
+  <option value="AZ Papers">A-Z</option>
+  <option value="ZA Papers">Z-A</option>
 </select>
 <script type="text/javascript">
     function processData(csv) {
