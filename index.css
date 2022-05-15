@@ -9,15 +9,18 @@
                 padding: 5px;
             }
 
-.logo {
+logo {
   height: 10vmin;
   pointer-events: none;
 margin-left:-20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo {
+  logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+header{
+ margin-top:-50px;
+}
+ 
