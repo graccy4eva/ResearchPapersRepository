@@ -1,0 +1,23 @@
+ table {
+                border-collapse: collapse;
+                border: 2px blue solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px bluek solid;
+                padding: 5px;
+            }
+
+.logo {
+  height: 10vmin;
+  pointer-events: none;
+margin-left:-20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
