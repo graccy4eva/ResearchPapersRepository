@@ -24,4 +24,13 @@ header{
  margin-top:100px;
  background-color: #f0f1f3;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f0f1f3;
+   color: black;
+   text-align: center;
+}
  
