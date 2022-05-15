@@ -41,13 +41,13 @@
       let thead = document.createElement('thead');
       table.appendChild(thead);
 
-      thead.innerHTML = '<tr><th>' + headers.join('</th><th>') + '</th></tr>';
+      thead.innerHTML = '<tr><th>' + headers.join('</th><th>') + '</th></tr>' + '<td>Action</td>';
 
       let tbody = document.createElement('tbody');
       table.appendChild(tbody);
 
       for (let row of data) {
-        tbody.innerHTML += '<tr><td>' + row.join('</td><td>') + '</td></tr>';
+        tbody.innerHTML += '<tr><td>' + row.join('</td><td>') + '</td></tr>' + + '<td>like</td>' ;
       }
 
       document.body.appendChild(table);
