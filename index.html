@@ -29,8 +29,9 @@
 
 </div>
 <h1>Welcome! Explore a collection of papers in our repository </h1>
+        </hr>
 <label for="filteryear">Filter by Year:</label>
-<select name="filteryear" id="filter" form="repo">
+<select name="filteryear" id="filteryear" form="repo">
   <option value="2020 Papers">2020</option>
   <option value="2019 Papers">2019</option>
   <option value="2018 Papers">2018</option>
@@ -38,11 +39,23 @@
 </select>
         <span style="margin-left:100px;">
 <label for="filterauthor">Filter by Author:</label>
-<select name="filter" id="filter" form="repo">
+<select name="filterauthor" id="filterauthor" form="repo">
   <option value="AZ Papers">A-Z</option>
   <option value="ZA Papers">Z-A</option>
 </select>
         </span>
+        <span style="margin-left:100px;">
+<label for="filtertechnology">Filter by Technology:</label>
+<select name="filtertech" id="filtertech" form="repo">
+   <option value="Camera">Camera</option>
+  <option value="Embosser">Embosser</option>
+  <option value="Haptic">Haptic</option>
+   <option value="Screen Reader">Screen Reader</option>
+     <option value="Sound">Sound</option>
+    <option value="Touch">Touch</option>
+</select>
+        </span>
+    
 <script type="text/javascript">
     function processData(csv) {
 
