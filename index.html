@@ -47,7 +47,7 @@
       table.appendChild(tbody);
 
       for (let row of data) {
-        tbody.innerHTML += '<tr><td>' + '<td>Like</td>' + row.join('</td><td>') + '</td></tr>' ;
+        tbody.innerHTML += '<tr><td>'  + row.join('</td><td>') + '<td>Like</td>' + '</td></tr>' ;
       }
 
       document.body.appendChild(table);
