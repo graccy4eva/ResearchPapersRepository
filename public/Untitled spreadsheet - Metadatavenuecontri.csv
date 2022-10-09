@@ -1,0 +1,24 @@
+Column Name,Filter Label,Explanation,Role,Type,UI Control,Searchable,Display in Table,Display in Popup
+Title,,,TITLE,STRING,NONE,YES,YES,YES
+User,,,,STRING,NONE,YES,YES,YES
+Year Published,,,,NUMBER,SLIDER,NO,YES,YES
+DOI,,,DOI,STRING,NONE,NO,NO,YES
+Task,,,,STRING,NONE,YES,NO,YES
+Interaction,,,,STRING,NONE,YES,NO,YES
+Information Granularity,,,,STRING,NONE,YES,NO,YES
+Chart Type,,,,LIST,MULTIOPTION,YES,NO,YES
+Sensory Modality,,,,LIST,MULTIOPTION,YES,NO,YES
+Contribution Type,,,,LIST,MULTIOPTION,YES,NO,YES
+Venue,,,,LIST,MULTIOPTION,YES,NO,YES
+Study Focus,,,,LIST,MULTIOPTION,NO,NO,YES
+Parents Pertain,,,,BOOLEAN,NONE,NO,NO,NO
+Students Pertain,,,,BOOLEAN,NONE,NO,NO,NO
+Teachers Pertain,,,,BOOLEAN,NONE,NO,NO,NO
+Keywords,,,,LIST,NONE,YES,NO,YES
+APA Citation,,,,STRING,NONE,YES,NO,YES
+SD category,,,,STRING,NONE,NO,NO,NO
+SD count,,,,NUMBER,NONE,NO,NO,NO
+RM category,,,,STRING,NONE,NO,NO,NO
+RM count,,,,NUMBER,NONE,NO,NO,NO
+OM category,,,,STRING,NONE,NO,NO,NO
+OM count,,,,NUMBER,NONE,NO,NO,NO
